@@ -1,0 +1,9 @@
+<!--<button type="button" class="btn btn-primary"  (click) = "showsecrete = !showsecrete">Primary</button>-->
+<button type="button" class="btn btn-primary"  (click) = "onToggle()"  >Primary</button>
+<p *ngIf = "showsecrete">secrete password = Tuna</p>
+<div *ngFor = "let num of log let i = index"  [ngStyle] ="{'background-color' : i >= 4 ? 'blue' : 'transperent'}"
+   [ngClass] = "{'textcolor' : i>=4}">{{ num }} </div>
+
+
+   <hr>
+<app-experince></app-experince>

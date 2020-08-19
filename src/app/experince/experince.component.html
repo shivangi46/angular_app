@@ -1,0 +1,16 @@
+
+<div class="container">
+    <p>Add new server or blueprints</p>
+    <app-cockpit  (servercreated) = onserverAdded($event)></app-cockpit>
+    <div class="row">
+      <div class="col-md-12">
+         <app-server-element *ngFor = "let servernew of servers" [serverapp] = "servernew"
+                                                                  ></app-server-element> 
+      <!-- <app-server-element *ngFor = "let hero of heroes" [serverapp] = "{}" [hero] = "hero" 
+                                                          [master] ="master"></app-server-element> -->
+        <!-- <h2>{{ master }} controlss {{ heroes.length }}</h2> -->
+        
+        </div>
+      </div>
+</div>
+    
