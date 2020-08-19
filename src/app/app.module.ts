@@ -6,6 +6,7 @@ import { FormsModule }   from '@angular/forms';
 import { ExperinceComponent } from './experince/experince.component';
 import { CockpitComponent } from './cockpit/cockpit.component';
 import { ServerElementComponent } from './server-element/server-element.component';
+import { VendorComponent } from './vendor/vendor.component';
 
 
 @NgModule({
@@ -13,7 +14,8 @@ import { ServerElementComponent } from './server-element/server-element.componen
     AppComponent,
     ExperinceComponent,
     CockpitComponent,
-    ServerElementComponent
+    ServerElementComponent,
+    VendorComponent
   ],
   imports: [
     BrowserModule,
