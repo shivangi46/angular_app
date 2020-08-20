@@ -1,0 +1,13 @@
+
+<h2>Should mankind colonize the Universe?</h2>
+    
+    Agreed : {{ plus }} Disagreed : {{ minus }}  {{ appval }}
+<!-- <app-vendor *ngFor = "let voter of voters"
+    [name] = voter
+ (voted) = onvoted($event)
+ (val_name) = catchvalue($event)></app-vendor> -->
+ <app-vendor voters="{}" voted="{}" val_name="{}" (clickval) = "onclickassign($event)"></app-vendor>
+
+ <div *ngFor = "let event of clickavail">
+     {{event.fname}} and {{ event.sname }}
+ </div>

@@ -1,1 +1,14 @@
-<p>vendor works!</p>
+
+  <div class="container">
+        <div class="col-md-8">
+        <p>{{name}}</p>
+        <button type="button" class="btn btn-secondary" (click) ="vote(true)" [disabled] = "didvoted">Plus</button>
+        <button  type="button" class="btn btn-secondary" (click) ="vote(false)" [disabled] = "didvoted">Minus</button>
+        <button type="button" class="btn btn-secondary" (click) ="offvoted()">Click here</button>
+        
+        <input  type="text" class="form-control"  aria-label="Username" aria-describedby="basic-addon1" [(ngModel)]= "first">
+        <input  type="text" class="form-control"  aria-label="Username" aria-describedby="basic-addon1" [(ngModel)] = "second">
+        <button type="button" class="btn btn-primary" (click) = "clickplus()">Click Plus</button>    
+      
+    </div>
+</div>

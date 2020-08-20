@@ -7,6 +7,8 @@ import { ExperinceComponent } from './experince/experince.component';
 import { CockpitComponent } from './cockpit/cockpit.component';
 import { ServerElementComponent } from './server-element/server-element.component';
 import { VendorComponent } from './vendor/vendor.component';
+import { SuppliersComponent } from './suppliers/suppliers.component';
+
 
 
 @NgModule({
@@ -15,7 +17,9 @@ import { VendorComponent } from './vendor/vendor.component';
     ExperinceComponent,
     CockpitComponent,
     ServerElementComponent,
-    VendorComponent
+    VendorComponent,
+    SuppliersComponent,
+   
   ],
   imports: [
     BrowserModule,
